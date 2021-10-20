@@ -1,0 +1,31 @@
+fun main() {
+    val friends : Array<Any> = arrayOf(1996, 1997, "dimas")
+    println(friends)
+
+    for (hg in friends) {
+        println(hg)
+        val lik : Array<String> = arrayOf("dimas", "fajar", "kurniawan")
+        println(lik[0])
+        println(lik.get(1))
+
+        lik.set(0,"kacu")
+        println(lik[1])
+        val fName: Array<String> = arrayOf("dimas", "fajar", "kurniawan")
+        println(fName[0])
+        println(fName.get(1))
+
+        fName.set(0, "kacu")
+        println(fName[0])
+        for (i in fName)
+            println(i)
+
+
+        val name : Array<String?> = arrayOfNulls(2)
+        name.set(0,null)
+        name.set(1,null)
+
+        for (i in name)
+            println(i)
+    }
+
+}
